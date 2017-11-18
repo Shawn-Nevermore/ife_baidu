@@ -6,6 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML5 Demo</title>
+    <style>
+        .democss {
+            color: blue;
+            /* font的属性顺序如下，其中font-size font-family无法省略 */
+            /* font: font-weight font-variant font-weight font-size line-height font-family; */
+            font: 3em "Comic Sans MS", cursive;
+        }
+        
+        .democss strong {
+            font-weight: bolder;
+            color: #ff0;
+            text-decoration: underline;
+        }
+        
+        .democss strong:first-child {
+            color: darkgreen;
+        }
+        
+        nav ul li a:link:hover {
+            /* color: slateblue; */
+            outline: dotted red;
+            background-color: lightblue;
+        }
+        
+        #data-table-1 {
+            width: 40%;
+        }
+        
+        #data-table-1 tr td,
+        #data-table-1 {
+            border: 1px solid #000000;
+            border-collapse: collapse;
+            padding: 10px 30px 5px 5px;
+        }
+        
+        #data-table-1 td:first-child {
+            font-weight: bolder;
+            color: skyblue;
+        }
+        
+        #data-table-1 td:first-child+td {
+            font-family: consola;
+            color: blue;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +64,7 @@
     <nav>
         <ul>
             <li><a href="http://www.google.com">Google</a></li>
-            <li><a href="http://www.bilibili.com">b站</a></li>
+            <li><a href="http://www.bilibili.com" target="_blank">b站</a></li>
         </ul>
     </nav>
     <article>
@@ -33,6 +78,35 @@
                 这天她穿着一件白色纱质的短裙，红色的纯棉T恤。薄薄的衣服下丰满坚挺的乳房随着她身体的走动轻轻地颤动。短裙下浑圆的小屁股向上翘起一个优美的弧线，修长匀称的双腿没有穿丝袜，白嫩的大腿光裸着。一双白色的软皮鞋，小巧玲珑。一股青春的气息弥漫全身，可新婚少妇成熟的韵味和扭动起来的腰肢却让她有一种让人心慌的诱惑力。
             </p>
         </section>
+    </article>
+    <article>
+        <p class="democss">
+            <strong>C</strong>ascating
+            <strong>S</strong>tyle
+            <strong>S</strong>heet
+        </p>
+        <table id="data-table-1">
+            <tr>
+                <td>Prefix</td>
+                <td>001</td>
+                <td>default</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>010</td>
+                <td>fast</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>011</td>
+                <td>slow</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>100</td>
+                <td>good</td>
+            </tr>
+        </table>
     </article>
     <aside>相关小故事</aside>
     <footer>&copy</footer>

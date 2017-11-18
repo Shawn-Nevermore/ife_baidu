@@ -1,0 +1,20 @@
+.links {
+    color: blue;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.picSize img {
+    width: 40%;
+}
+
+div div.picSize img {
+    width: 30%;
+}
+
+.table1,
+.table1 tr td {
+    border: 1px solid black;
+}
