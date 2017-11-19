@@ -1,0 +1,53 @@
+#oceans {
+    border: 2px solid #787878;
+    empty-cells: show;
+    border-collapse: collapse;
+    background-color: #e5fdf1;
+    text-align: left;
+}
+
+
+/* 最好加上是哪一个table的直属属性，否则链接多个css文件会出错 */
+
+caption {
+    font-weight: bold;
+    font-size: 2em;
+    border-bottom: 6px solid rgb(163, 243, 163);
+    margin: 0.5em;
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+th {
+    font-weight: normal;
+}
+
+td {
+    background-color: #a4d1ff;
+    border: 1px solid grey;
+    padding-left: 50px;
+}
+
+tr:first-child,
+tr:nth-last-child(2)>th,
+tr:nth-last-child(3)>th {
+    color: blue;
+}
+
+tr:nth-last-child(3) td {
+    border-top: 2.5px solid green;
+}
+
+tr:nth-last-child(2) td,
+tr:nth-last-child(3) td {
+    background-color: #a2ffd0;
+}
+
+tr:nth-child(2) th {
+    color: gray;
+}
