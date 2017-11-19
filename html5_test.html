@@ -12,6 +12,15 @@
             /* font的属性顺序如下，其中font-size font-family无法省略 */
             /* font: font-weight font-variant font-weight font-size line-height font-family; */
             font: 3em "Comic Sans MS", cursive;
+            background: url("Blue-rule.png");
+            border: 2px solid blue;
+            height: 300px;
+            width: 60%;
+            padding: 10px 20px;
+        }
+        
+        .democss::before {
+            content: " " url("Yellow-pin.png");
         }
         
         .democss strong {
@@ -49,6 +58,27 @@
         #data-table-1 td:first-child+td {
             font-family: consola;
             color: blue;
+        }
+        
+        .colorblock span {
+            height: 20px;
+            width: 15px;
+        }
+        
+        .colorblock .b1 {
+            background-color: #eff;
+        }
+        
+        .colorblock .b2 {
+            background-color: #dff;
+        }
+        
+        .colorblock .b3 {
+            background-color: #cff;
+        }
+        
+        .colorblock .b4 {
+            background-color: #bff;
         }
     </style>
 </head>
@@ -107,6 +137,13 @@
                 <td>good</td>
             </tr>
         </table>
+        <div class="colorblock">
+
+            <span class="b1"></span>
+            <span class="b2"></span>
+            <span class="b3"></span>
+            <span class="b4"></span>
+        </div>
     </article>
     <aside>相关小故事</aside>
     <footer>&copy</footer>

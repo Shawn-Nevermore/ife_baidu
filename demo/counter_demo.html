@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>li Counter</title>
+    <style>
+        #numbered {
+            counter-reset: mynum;
+        }
+        
+        .numbered::before {
+            content: counter(mynum) ": ";
+            counter-increment: mynum;
+            font-weight: bold;
+        }
+        
+        #roman {
+            counter-reset: rnum;
+        }
+        
+        .roman::before {
+            /* 这里产生的罗马字母列表和后面的内容间隔不是等宽，求等宽表达方式 */
+            content: "(" counter(rnum, upper-roman) ") ";
+            counter-increment: rnum;
+            font-weight: bold;
+        }
+        
+        li {
+            list-style: lower-roman;
+            margin-bottom: 80px;
+        }
+        
+        ul {
+            border: 10px outset #aff;
+            /* width: 40%; */
+        }
+        
+        #oceans,
+        #numbered,
+        #roman,
+        ul {
+            float: left;
+            padding: 3em;
+        }
+        /*         
+        #numbered {
+            float: none;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="oceans">
+
+        <h3>The oceans</h3>
+        <ul>
+            <li>Arctic</li>
+            <li>Atlantic</li>
+            <li>Pacific</li>
+            <li>Indian</li>
+            <li>Southern</li>
+        </ul>
+    </div>
+
+    <div id="numbered">
+        <h3>Numbered paragraphs</h3>
+
+        <p class="numbered">Lorem ipsum</p>
+        <p class="numbered">Dolor sit</p>
+        <p class="numbered">Amet consectetuer</p>
+        <p class="numbered">Magna aliquam</p>
+        <p class="numbered">Autem veleum</p>
+    </div>
+
+    <div id="roman">
+        <h3>Roman numbered</h3>
+
+        <p class="roman">ShadowFiend</p>
+        <p class="roman">Riki</p>
+        <p class="roman">Huskar</p>
+        <p class="roman">Ember Spirit</p>
+        <p class="roman">Axe</p>
+    </div>
+
+
+</body>
+
+</html>
