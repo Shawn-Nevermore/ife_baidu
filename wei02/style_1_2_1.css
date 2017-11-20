@@ -1,20 +1,172 @@
-.links {
-    color: blue;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.header {
+body {
+    margin: 0 120px;
+    background-color: #151515;
+}
+
+.container {
+    background: #e6e6e6;
+}
+
+header nav {
+    background-color: #313131;
+    display: block;
+    width: 100%;
+    float: top;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+header nav #site-nav-l {
+    list-style-type: none;
+    float: left;
+}
+
+header nav #site-nav-r {
+    list-style-type: none;
+    float: right;
+}
+
+nav li {
+    height: 60px;
+    float: left;
+    /* vertical-align: bottom; */
+}
+
+a.logo:link,
+a.logo visit {
+    padding: 5px 10px;
+    position: relative;
+    left: 0;
+}
+
+nav img {
+    filter: invert();
+    width: 100px;
+    /* padding: 5px 10px; */
+}
+
+nav a:link,
+nav a:visited {
+    position: relative;
+    right: 0;
+    text-align: center;
     font-weight: bold;
+    font-size: 13px;
+    display: block;
+    width: 100px;
+    height: 60px;
+    padding: 20px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    background-color: #8c8c8c;
+}
+
+.article1,
+.article2,
+.article3,
+.article4,
+.aside {
+    font-family: "Microsoft YaHei";
+    background: #fff;
+    float: top;
+    box-shadow: 2px 2px 1.5px #888888;
+    padding: 20px 15px;
+    margin: 16px;
+}
+
+.header1 {
+    padding: 20px 0;
+}
+
+.header2,
+.author_info {
+    padding: 5px 0;
+    color: darkgray;
+    text-indent: 0;
+}
+
+p,
+.article2 li {
+    text-indent: 2em;
+    padding: 10px 0;
+    line-height: 1.5em;
 }
 
 .picSize img {
-    width: 40%;
+    width: 400px;
+    padding: 10px 0;
 }
 
-div div.picSize img {
+.article2 ul {
+    list-style: none;
+}
+
+.article3>div {
+    border: 1px solid lightgray;
+    margin: 10px;
     width: 30%;
+}
+
+.article3 div h4 {
+    text-align: center;
+}
+
+.article3 img {
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.article4 ol {
+    margin-left: 3em;
+}
+
+.table1 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .table1,
 .table1 tr td {
-    border: 1px solid black;
+    border: 1px solid darkgray;
+    border-collapse: collapse;
+}
+
+.table1 thead {
+    background: #151515;
+    color: white;
+}
+
+.table1 td,
+.table1 th {
+    padding: 5px 8px;
+    text-align: left;
+}
+
+.table1 tfoot {
+    background: darkgray;
+    color: white;
+}
+
+footer {
+    padding: 23px;
+    height: 50px;
+    background: #151515;
+    text-align: center;
+    vertical-align: center;
+    color: #fff;
+    font-size: 11px;
 }
