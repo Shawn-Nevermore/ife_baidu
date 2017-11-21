@@ -161,33 +161,64 @@
 
             <aside class="aside">
                 <h3>这里以后是一个侧栏，这是侧栏标题</h3>
-                <h3>侧栏注册窗口标题</h3>
-                main
-                <p>请输入邮箱地址：<input type="text" placeholder="这是一个文本输入框"></p>
-                <p>邮箱地址请按要求输入</p>
-                <form action="#" method="post">
-                    请输入密码：<input type="password" name="#" id="#" placeholder="这是一个文本输入框"><br> 请重复输入密码：
-                    <input type="password" name="#" id="#" placeholder="这是一个文本输入框"><br> 密码为6-16英文或数字
+
+                <p class="email-input">
+                    <label>请输入邮箱地址：</label>
+                    <input type="text" placeholder="这是一个文本输入框">
+                </p>
+                <p class="email-arg">
+                    邮箱地址请按要求输入
+                </p>
+                <br>
+                <form action="#" method="post" class="pwd-input">
+                    <p>
+                        <label>请输入密码：</label>
+                        <input type="password" name="#" id="#" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                    </p>
+                    <p>
+                        <label>请重复输入密码：</label>
+                        <input type="password" name="#" id="#" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                    </p>
+                    <p class="pwd-arg">
+
+                        密码为6-16英文或数字
+                    </p>
+                    <br>
                 </form>
 
-                <div>
-                    <p>性别：<input type="radio" name="#" id="#" checked="checked">男 <input type="radio" name="#" id="#">女</p>
-                    <p>城市：<select name="#" id="#">
-                <option value="">北京</option>
-                <option value="">上海</option>
-                <option value="">深圳</option>
-            </select>
-                        <p>爱好：<input type="checkbox" name="#" id="#">运动
-                            <input type="checkbox" name="" id="">艺术
-                            <input type="checkbox" name="" id="">科学
-                        </p>
-                        <p>个人描述：<br>
-                            <textarea name="#" id="#" cols="30" rows="10" placeholder="多行输入框，请输入您的描述"></textarea>
-                            <br>
-                            <input type="button" value="提交">
-                        </p>
-                </div>
+                <p class="gender-input">
+                    <label>性别：</label>
+                    <input type="radio" name="gender" id="male" value="male" checked="checked">
+                    <label for="male">男</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">女</label>
+                </p>
 
+                <p class="city-input">
+                    <label>城市：</label>
+                    <select name="city" id="#">
+                        <option value="">北京</option>
+                        <option value="">上海</option>
+                        <option value="">深圳</option>
+                    </select>
+                </p>
+
+                <p class="hobby-input">
+                    <label>爱好：</label>
+                    <input type="checkbox" name="hobby" id="sport">
+                    <label for="sport">运动</label>
+                    <input type="checkbox" name="hobby" id="art">
+                    <label for="art">艺术</label>
+                    <input type="checkbox" name="hobby" id="science">
+                    <label for="science">科学</label>
+                </p>
+
+                <p class="personal">
+                    <label for="person-info">个人描述：</label>
+                    <textarea name="info" id="person-info" cols="30" rows="10" placeholder="多行输入框，请输入您的描述"></textarea>
+                </p>
+
+                <input class="btn-submit" type="button" value="提交">
             </aside>
 
         </main>

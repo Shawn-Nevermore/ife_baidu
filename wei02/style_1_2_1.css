@@ -60,9 +60,9 @@ nav a:visited {
     font-weight: bold;
     font-size: 13px;
     display: block;
-    width: 100px;
+    width: 90px;
     height: 60px;
-    padding: 20px 10px;
+    padding: 20px 0;
     color: white;
     text-decoration: none;
 }
@@ -96,7 +96,10 @@ nav a:active {
     text-indent: 0;
 }
 
-p,
+.article1 p,
+.article2 p,
+.article3 p,
+.article4 p,
 .article2 li {
     text-indent: 2em;
     padding: 10px 0;
@@ -159,6 +162,69 @@ p,
 .table1 tfoot {
     background: darkgray;
     color: white;
+}
+
+.aside h3::before {
+    content: url("icon-y.png");
+}
+
+.aside .email-input label,
+.aside .pwd-input label,
+.aside .gender-input label:first-child,
+.aside .city-input label,
+.aside .hobby-input label:first-child,
+.aside .personal label {
+    display: inline-block;
+    text-align: right;
+    /* padding: 0 10px; */
+    /* vertical-align: middle; */
+    width: 40%;
+}
+
+.aside input[type="text"],
+.aside input[type="password"],
+.aside input[type="radio"] {
+    /* height: 10px; */
+    /* line-height: 1px; */
+    padding: 5px 3px;
+    margin: 5px;
+    /* vertical-align: middle; */
+    color: #666;
+}
+
+.aside .email-arg,
+.aside .pwd-arg {
+    font-size: 12px;
+    color: #bbb;
+    position: relative;
+    left: 41%;
+}
+
+.aside .personal label {
+    vertical-align: top;
+}
+
+.aside #person-info {
+    width: 55%;
+    padding: 5px 3px;
+}
+
+.aside .btn-submit {
+    width: 100%;
+    background: #00f;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin: 10px auto;
+    line-height: 35px;
+}
+
+.aside .gender-input,
+.aside .city-input,
+.aside .hobby-input {
+    padding: 5px 3px;
+    margin: 5px;
 }
 
 footer {
