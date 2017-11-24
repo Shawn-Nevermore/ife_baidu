@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* 理解box-sizing属性 */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.content {
+    margin: 20px;
+    /* 纯CSS方法：设置min-height确保主体比最长子元素更长（在已知最长子元素长度的情况下） */
+    min-height: 480px;
+    /* display: flex; */
+}
+
+.content,
+#team-logo,
+.logo-p {
+    background: #eee;
+}
+
+.team,
+.main,
+.personal-logo {
+    background: #fff;
+}
+
+.content,
+.team,
+.main,
+.personal-logo,
+.team #team-logo,
+.personal-logo .logo-p {
+    padding: 20px;
+    border: 1px solid #999;
+}
+
+.team {
+    width: 200px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+.team #team-logo {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.team #team-name {
+    float: left;
+    display: block;
+    position: relative;
+    left: 10px;
+}
+
+.main {
+    margin: 0 140px 0 220px;
+}
+
+.main header h2 {
+    text-align: center;
+}
+
+.personal-logo {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    width: 120px;
+}
+
+.personal-logo .logo-p {
+    margin: 10px auto;
+}
+
+.personal-logo .logo-p:first-child {
+    margin-top: 0;
+}
+
+.personal-logo .logo-p:last-child {
+    margin-bottom: 0;
+}
