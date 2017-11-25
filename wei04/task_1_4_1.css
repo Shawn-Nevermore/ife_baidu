@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    position: relative;
+    height: 100%;
+}
+
+.square {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: #ccc;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.circle1 {
+    left: -50px;
+    top: -50px;
+    float: left;
+    position: relative;
+    border: 50px solid #fc0;
+    border-radius: 50px;
+    height: 0;
+    width: 0;
+}
+
+.circle2 {
+    float: right;
+    left: 50px;
+    bottom: -150px;
+    position: relative;
+    border: 50px solid #fc0;
+    border-radius: 50px;
+    height: 0;
+    width: 0;
+}
