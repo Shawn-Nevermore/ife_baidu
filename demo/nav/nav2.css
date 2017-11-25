@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 10px 100px;
+}
+
+.nav2 a {
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav2>ul {
+    height: 30px;
+    width: 700px;
+    font: bold 14px/1.5em "Microsoft YaHei";
+    list-style: none;
+}
+
+.nav2>ul>li {
+    float: left;
+    position: relative;
+}
+
+.nav2>ul>li a:link,
+.nav2>ul>li a:visited {
+    display: block;
+    background: #ccc;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    transition: all 0.2s;
+}
+
+.nav2>ul>li a:hover {
+    background: #ff8080;
+    color: #fff;
+    transform: scaleY(1.1);
+    font-size: 16px;
+    border-radius: 2px;
+    box-shadow: 2px 3px 5px #efefef;
+}
+
+.nav2 ul>li .subNav {
+    list-style: none;
+    position: absolute;
+    top: 33px;
+    width: 120px;
+    /* 初始设置子菜单高度为0来隐藏 */
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.nav2 .subNav li a {
+    height: 35px;
+    line-height: 35px;
+}
+
+.nav2 ul>li:hover .subNav {
+    overflow: visible;
+    transform: translateY(-3px);
+}

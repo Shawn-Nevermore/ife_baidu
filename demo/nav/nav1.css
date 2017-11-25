@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 10px 100px;
+}
+
+.nav1 ul {
+    padding: 10px;
+    font: bold 14px/1.5em "Microsoft YaHei";
+    list-style: none;
+    width: 100px;
+}
+
+.nav1 ul li a:link,
+.nav1 ul li a:visited {
+    display: block;
+    text-decoration: none;
+    text-indent: 25px;
+    background: #ccc;
+    color: blue;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 1px;
+}
+
+.nav1 ul li a:hover {
+    background: #ff8080;
+    color: #fff;
+}

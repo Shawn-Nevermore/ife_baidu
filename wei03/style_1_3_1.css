@@ -60,6 +60,10 @@
     margin: 0 140px 0 220px;
 }
 
+.main pre {
+    word-wrap: break-word;
+}
+
 .main header h2 {
     text-align: center;
 }
