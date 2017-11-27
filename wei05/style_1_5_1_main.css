@@ -1,0 +1,96 @@
+main {
+    margin: 20px 430px 20px 20px;
+}
+
+main article {
+    font-family: "Microsoft YaHei";
+    background: #fff;
+    box-shadow: 2px 2px 1.5px #888888;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.header1 {
+    line-height: 3em;
+}
+
+.header2,
+.author_info {
+    line-height: 30px;
+    color: darkgray;
+}
+
+main article p,
+.article2 li {
+    text-indent: 2em;
+    padding: 10px 0;
+    line-height: 1.5em;
+}
+
+.picSize img {
+    width: 400px;
+    padding: 10px 0;
+}
+
+.article2 ul {
+    list-style: none;
+}
+
+.article3 {
+    overflow: auto;
+}
+
+.article3>div {
+    float: left;
+    border: 1px solid lightgray;
+    margin: 10px;
+    width: 320px;
+}
+
+.article3 div h4 {
+    text-align: center;
+}
+
+.article3 img {
+    width: 300px;
+    display: block;
+    margin: 10px;
+}
+
+
+/* 
+.article4 {
+    clear: both;
+} */
+
+.article4 ol {
+    margin-left: 3em;
+}
+
+.table1 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table1,
+.table1 tr td {
+    border: 1px solid darkgray;
+    border-collapse: collapse;
+}
+
+.table1 thead {
+    background: #151515;
+    color: white;
+}
+
+.table1 td,
+.table1 th {
+    padding: 5px 8px;
+    text-align: left;
+}
+
+.table1 tfoot {
+    background: darkgray;
+    color: white;
+}

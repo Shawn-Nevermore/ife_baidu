@@ -1,0 +1,44 @@
+header {
+    height: 60px;
+    background-color: #151515;
+    overflow: hidden;
+}
+
+header ul {
+    list-style: none;
+}
+
+header #site-nav-l {
+    width: 180px;
+    float: left;
+}
+
+header #site-nav-r {
+    width: 400px;
+    float: right;
+}
+
+header img {
+    filter: invert();
+    width: 100px;
+    margin: 8px 10px;
+}
+
+header #site-nav-r a:link,
+header #site-nav-r a:visited {
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    text-decoration: none;
+}
+
+header #site-nav-r a:hover,
+header #site-nav-r a:active {
+    background-color: #666666;
+}
